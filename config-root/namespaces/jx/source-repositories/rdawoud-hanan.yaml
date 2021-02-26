@@ -1,0 +1,22 @@
+apiVersion: jenkins.io/v1
+kind: SourceRepository
+metadata:
+  creationTimestamp: null
+  labels:
+    owner: rdawoud
+    provider: github
+    repository: hanan
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+  name: rdawoud-hanan
+  namespace: jx
+spec:
+  httpCloneURL: https://github.com/rdawoud/hanan.git
+  org: rdawoud
+  provider: https://github.com
+  providerKind: github
+  providerName: github
+  repo: hanan
+  scheduler:
+    kind: ""
+    name: in-repo
+  url: https://github.com/rdawoud/hanan

@@ -6,6 +6,10 @@ data:
       repos:
       - rdawoud/jx3
       require_self_approval: true
+    - lgtm_acts_as_approve: true
+      repos:
+      - rdawoud/hanan
+      require_self_approval: true
     cat: {}
     cherry_pick_unapproved: {}
     config_updater:
@@ -20,6 +24,22 @@ data:
       additional_labels: null
     owners: {}
     plugins:
+      rdawoud/hanan:
+      - approve
+      - assign
+      - blunderbuss
+      - help
+      - hold
+      - lgtm
+      - lifecycle
+      - override
+      - size
+      - trigger
+      - wip
+      - heart
+      - cat
+      - dog
+      - pony
       rdawoud/jx3:
       - config-updater
       - approve
@@ -49,6 +69,11 @@ data:
     - repos:
       - rdawoud/jx3
       trusted_org: todo
+    - repos:
+      - rdawoud/hanan
+      trusted_org: todo
+    welcome:
+    - message_template: Welcome
 kind: ConfigMap
 metadata:
   creationTimestamp: null
